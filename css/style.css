@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 71px 24px;
+}
+
+.Parentcontainer {
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 24px;
+  column-gap: 30px;
+}
+
+.grid-item {
+  padding: 26px 32px 32px 32px;
+  border-radius: 8px;
+}
+
+.image-name {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+
+.image-name img {
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+}
+
+.name-graduate {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.name-graduate h4 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.name-graduate span {
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.grid-item h3 {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.grid-item p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  opacity: 0.7;
+}
+
+.danielItem {
+  grid-column: 1/3;
+  background-color: #733fc8;
+}
+
+.danielItem .image-name img,
+.patrickItem .image-name img {
+  border: 2px solid #a775f1;
+}
+
+.danielItem h3 {
+  color: #fff;
+}
+
+.danielItem p {
+  color: #cfcfcf;
+  margin-top: 16px;
+}
+
+.jonathanItem {
+  background-color: #48556a;
+}
+
+.jonathanItem h3 {
+  color: #fff;
+}
+
+.jonathanItem p {
+  color: #fff;
+  margin-top: 16px;
+}
+
+.kiraItem {
+  grid-row: 1/-1;
+  grid-column: 4;
+  background-color: #ffffff;
+}
+
+.kiraItem .name-graduate h4 {
+  color: #48556a;
+}
+
+.kiraItem .name-graduate span {
+  color: #48556a;
+}
+
+.kiraItem h3 {
+  color: #48556a;
+}
+
+.kiraItem p {
+  color: #48556a;
+  margin-top: 24px;
+}
+
+.jeanetteItem {
+  background-color: #ffffff;
+}
+
+.jeanetteItem h3 {
+  color: #48556a;
+}
+
+.jeanetteItem .name-graduate h4 {
+  color: #48556a;
+}
+
+.jeanetteItem .name-graduate span {
+  color: #48556a;
+}
+
+.jeanetteItem p {
+  color: #48556a;
+  margin-top: 24px;
+}
+
+.patrickItem {
+  grid-column: 2/4;
+  background-color: #19202d;
+}
+
+.patrickItem h3 {
+  color: #ecf2f8;
+}
+
+.patrickItem p {
+  color: #fff;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 1131px) {
+  .Parentcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10;
+  }
+
+  .grid-item {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Parentcontainer {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .danielItem {
+    grid-row: 1/3;
+  }
+}
